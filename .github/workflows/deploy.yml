@@ -6,7 +6,7 @@ name: TsinghuaDaily Report
 on:
   # 每天北京时间 10点整 (utc+8)自动运行
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 9 * * * echo 'sleep '$(shuf -i 1-59 -n 1)';TsinghuaDailyReport/report.py' |at now + $(shuf -i 2-150 -n 1) min"
 
 jobs:
   submit_report:
