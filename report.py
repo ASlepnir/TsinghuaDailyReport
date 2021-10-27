@@ -8,17 +8,17 @@ from bs4 import BeautifulSoup
 import os
 import time
 
-telephone = "xxx"
+telephone = "15801537330"
 # 进校还是出校
-in_or_out = "出校"
-in_or_out_text = "出校 Exit"
+in_or_out = "进校"
+in_or_out_text = "进校 Entrance"
 # 进出校事由
-in_or_out_reason_text = "出校科研 Off-campus Research"
-in_or_out_reason = "出校科研"
+in_or_out_reason_text = "进校上课 Course Attending"
+in_or_out_reason = "进校上课"
 # 事由描述
-description = "xxx"
+description = "当天有课程安排"
 # 校外往来地点
-destination = "xxx"
+destination = "海淀区逸城东苑16栋"
 
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
