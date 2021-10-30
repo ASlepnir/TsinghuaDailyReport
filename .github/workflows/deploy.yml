@@ -6,9 +6,9 @@ name: TsinghuaDaily Report
 on:
   # 每天北京时间 0点到2点半随机事件的闹钟
   # 30 0 * * * echo 'sleep '$(shuf -i 1-59 -n 1)';TsinghuaDailyReport/report.py' |at now + $(shuf -i 2-150 -n 1) min
-  # 每天北京时间 0点30分执行
+  # 每天北京时间 10点申请后一天的进校
   schedule:
-    - cron: "05 16 * * *"
+    - cron: "0 2 * * *"
 
 jobs:
   submit_report:
